@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28186F7F2D10039200F7714C /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28186F7E2D10039200F7714C /* RegionService.swift */; };
+		28186F822D1007F700F7714C /* RegionServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28186F812D1007F700F7714C /* RegionServiceTest.swift */; };
 		2826A4682D0E5FF700E1324E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826A4672D0E5FF700E1324E /* HTTPClient.swift */; };
 		2826A55D2D0E64CE00E1324E /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826A55C2D0E64CE00E1324E /* ResponseError.swift */; };
 		2826A5602D0E7A4F00E1324E /* HTTPClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826A55F2D0E7A4F00E1324E /* HTTPClientTest.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		28186F7A2D0EAA5F00F7714C /* iPokedex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iPokedex.entitlements; sourceTree = "<group>"; };
+		28186F7E2D10039200F7714C /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
+		28186F812D1007F700F7714C /* RegionServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionServiceTest.swift; sourceTree = "<group>"; };
 		2826A4672D0E5FF700E1324E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		2826A55C2D0E64CE00E1324E /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		2826A55F2D0E7A4F00E1324E /* HTTPClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTest.swift; sourceTree = "<group>"; };
@@ -82,6 +86,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28186F7D2D0FFC7B00F7714C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				28186F7E2D10039200F7714C /* RegionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		28186F802D1007C500F7714C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				28186F812D1007F700F7714C /* RegionServiceTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		2826A4662D0E5FB100E1324E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,12 +161,13 @@
 			isa = PBXGroup;
 			children = (
 				28186F7A2D0EAA5F00F7714C /* iPokedex.entitlements */,
+				28B027D72C6B1F4900D0E057 /* ContentView.swift */,
+				28B027D52C6B1F4900D0E057 /* iPokedexApp.swift */,
+				28B027DB2C6B1F4A00D0E057 /* Assets.xcassets */,
 				2826A56B2D0E97CF00E1324E /* Model */,
 				2826A4662D0E5FB100E1324E /* Networking */,
-				28B027D52C6B1F4900D0E057 /* iPokedexApp.swift */,
-				28B027D72C6B1F4900D0E057 /* ContentView.swift */,
-				28B027DB2C6B1F4A00D0E057 /* Assets.xcassets */,
 				28B027DD2C6B1F4A00D0E057 /* Preview Content */,
+				28186F7D2D0FFC7B00F7714C /* Services */,
 			);
 			path = iPokedex;
 			sourceTree = "<group>";
@@ -163,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2826A55E2D0E79F900E1324E /* Networking */,
+				28186F802D1007C500F7714C /* Service */,
 			);
 			path = iPokedexTests;
 			sourceTree = "<group>";
@@ -307,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B027D82C6B1F4900D0E057 /* ContentView.swift in Sources */,
+				28186F7F2D10039200F7714C /* RegionService.swift in Sources */,
 				28B027D62C6B1F4900D0E057 /* iPokedexApp.swift in Sources */,
 				2826A55D2D0E64CE00E1324E /* ResponseError.swift in Sources */,
 				2826A4682D0E5FF700E1324E /* HTTPClient.swift in Sources */,
@@ -321,6 +344,7 @@
 				2826A5682D0E8B5C00E1324E /* HTTPClientMock.swift in Sources */,
 				2826A5622D0E7C9100E1324E /* URLSessionMock.swift in Sources */,
 				2826A5602D0E7A4F00E1324E /* HTTPClientTest.swift in Sources */,
+				28186F822D1007F700F7714C /* RegionServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

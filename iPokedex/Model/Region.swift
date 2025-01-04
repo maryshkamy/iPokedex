@@ -7,5 +7,5 @@ struct RegionResponse: Decodable {
 
 struct Region: Decodable {
     let name: String
-    let url: URL
+    let url: String
 }

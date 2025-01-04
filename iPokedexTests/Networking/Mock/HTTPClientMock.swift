@@ -2,10 +2,18 @@ import Foundation
 
 @testable import iPokedex
 class HTTPClientMock: HTTPClientProtocol {
-    var didCallRequest: Bool = false
+
+    var result: Result<RegionResponse, ResponseError>?
+
+    init(result: Result<RegionResponse, ResponseError>? = nil) {
+        self.result = result
+    }
 
     func request<T: Decodable>(from url: String) async -> Result<T, ResponseError> {
-        didCallRequest = true
-        return .failure(.none)
+        guard let result = result as? Result<T, ResponseError> else {
+            fatalError("Unexpected result type")
+        }
+
+        return result
     }
 }

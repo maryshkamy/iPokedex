@@ -15,9 +15,10 @@ extension URLSession: URLSessionProtocol {
 }
 
 class HTTPClient: HTTPClientProtocol {
+
     private let session: URLSessionProtocol
 
-    init (session: URLSessionProtocol = URLSession.shared) {
+    init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
 

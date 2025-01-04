@@ -2,6 +2,7 @@ import Foundation
 
 @testable import iPokedex
 class URLSessionMock: URLSessionProtocol {
+
     var data: Data?
     var response: URLResponse?
 

@@ -1,0 +1,15 @@
+{
+  "originHash" : "a5773a72ec996d9210a3ccff9cb1c5c7bf574c897600a4015b4bc39c1b2f228b",
+  "pins" : [
+    {
+      "identity" : "mrnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maryshkamy/MRNetworking.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dda748bc62ca8f3782678912542363aae04307ba"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -15,6 +15,7 @@
 		2826A5622D0E7C9100E1324E /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826A5612D0E7C9100E1324E /* URLSessionMock.swift */; };
 		2826A5682D0E8B5C00E1324E /* HTTPClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826A5672D0E8B5C00E1324E /* HTTPClientMock.swift */; };
 		2826A56D2D0E97E400E1324E /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2826A56C2D0E97E400E1324E /* Region.swift */; };
+		2887E5812D5431440046377C /* MRNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 2887E5802D5431440046377C /* MRNetworking */; };
 		28B027D62C6B1F4900D0E057 /* iPokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B027D52C6B1F4900D0E057 /* iPokedexApp.swift */; };
 		28B027D82C6B1F4900D0E057 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B027D72C6B1F4900D0E057 /* ContentView.swift */; };
 		28B027DC2C6B1F4A00D0E057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B027DB2C6B1F4A00D0E057 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2887E5812D5431440046377C /* MRNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +288,9 @@
 				Base,
 			);
 			mainGroup = 28B027C92C6B1F4900D0E057;
+			packageReferences = (
+				2887E57F2D5431440046377C /* XCRemoteSwiftPackageReference "MRNetworking" */,
+			);
 			productRefGroup = 28B027D32C6B1F4900D0E057 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -678,6 +683,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2887E57F2D5431440046377C /* XCRemoteSwiftPackageReference "MRNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maryshkamy/MRNetworking.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2887E5802D5431440046377C /* MRNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2887E57F2D5431440046377C /* XCRemoteSwiftPackageReference "MRNetworking" */;
+			productName = MRNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28B027CA2C6B1F4900D0E057 /* Project object */;
 }
